@@ -1,0 +1,172 @@
+:root {
+  --Light: hsl(217, 12%, 63%);
+  --Medium: hsl(216, 12%, 54%);
+  --Dark: hsl(213, 19%, 18%);
+  --VeryDark: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: overpass;
+}
+
+body {
+  overflow-x: hidden;
+  width: 1440px;
+  height: 100vh;
+  background: var(--VeryDark);
+  overflow: hidden;
+}
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  border-radius: 25px;
+  background: var(--Dark);
+  height: 335px;
+  width: 335px;
+}
+
+h2 {
+  margin: 0 1.6rem 0.5rem 1.6rem;
+  color: white;
+  font-weight: 600;
+  font-size: 22.5px;
+}
+
+.form p {
+  color: var(--Light);
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0 1.3rem 3.2rem 1.6rem;
+  height: 30px;
+  line-height: 19px;
+  letter-spacing: 0.1px;
+}
+
+#svg {
+  margin: 1.7rem 0 1.7rem 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  width: 38px;
+  background: hsl(215, 10%, 25%);
+  border-radius: 100px;
+}
+
+#svg svg {
+  transform: scale(0.81);
+}
+
+#radio {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem 1.6rem 1.6rem;
+}
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  font-weight: 400;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 41px;
+  width: 41px;
+  background: hsl(215, 10%, 25%);
+  border-radius: 100px;
+  color: var(--Light);
+  font-weight: 400;
+  font-size: 13px;
+}
+label:hover {
+  background: var(--Light);
+  color: hsl(215, 10%, 25%);
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+  background: orange;
+}
+
+button {
+  padding-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 1.5rem 1.8rem 0 1.6rem;
+  font-size: 12.5px;
+  display: block;
+  background: hsl(25, 97%, 53%);
+  color: white;
+  width: calc(100% - 3.5rem);
+  border-radius: 100px;
+  height: 36px;
+  border: none;
+}
+
+button:hover{
+  background: white;
+  color: hsl(25, 97%, 53%);
+
+}
+
+/********************************** thank you page **************************************/
+
+.thankYou {
+  position: absolute;
+  top: calc(-100vh + 335px / 2);
+  z-index: -1;
+}
+
+#svgThanks {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 1.1rem;
+}
+
+#svgThanks svg {
+  transform: scale(0.81);
+}
+
+#selectInfo {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+  height: 25px;
+  background: hsl(215, 10%, 25%);
+  width: 47%;
+  border-radius: 20px;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+}
+
+h3{
+  font-size: 22px;
+  margin: 1.8rem 0 0.5rem 0;
+  text-align: center;
+  color: white;
+}
+
+.last {
+  margin: 0 1.9rem 0 1.5rem;
+  text-align: center;
+  color: var(--Light);
+  font-size: 12px;
+  letter-spacing: 0.1px;
+  word-spacing: 0.2px;
+  line-height: 20px;
+}
